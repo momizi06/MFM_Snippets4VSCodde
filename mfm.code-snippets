@@ -1,0 +1,220 @@
+{
+	// Markup language For Misskey Snippets v1.0.0
+	// Ref: https://misskey.io/@hakohako_f2/pages/mfm-cheat-sheet
+	// For Misskey 2023.11.1
+
+	// Author: momizi06(momizi06@misskey.io)
+	// License: MIT
+
+	// func
+	"tada": {
+		"scope": "plaintext",
+		"prefix": "$tada",
+		"body": [
+			"$[tada${1| ,.speed=|}$0]",
+		],
+		"description": "アニメーション(じゃーん)"
+	},
+	"jelly": {
+		"scope": "plaintext",
+		"prefix": "$jelly",
+		"body": [
+			"$[jelly${1| ,.speed= |}$0]",
+		],
+		"description": "アニメーション(びよんびよん)",
+	},
+	"twitch": {
+		"scope": "plaintext",
+		"prefix": "$twitch",
+		"body": [
+			"$[twitch${1| ,.speed=|}$0]",
+		],
+		"description": "アニメーション(ブレ)",
+	},
+	"shake": {
+		"scope": "plaintext",
+		"prefix": "$shake",
+		"body": [
+			"$[shake${1| ,.speed=|}$0]",
+		],
+		"description": "アニメーション(ぶるぶる)",
+	},
+	"spin": {
+		"scope": "plaintext",
+		"prefix": "$spin",
+		"body": [
+			"$[spin${1| ,.left ,.alternate ,.x ,.x\\,left ,.x\\,alternate ,.y ,.y\\,left ,.y\\,alternate |}$0]",
+		],
+		"description": "アニメーション(回転)",
+	},
+	"jump": {
+		"scope": "plaintext",
+		"prefix": "$jump",
+		"body": [
+			"$[jump${1| ,.speed=|}$0]",
+		],
+		"description": "アニメーション(ジャンプ)",
+	},
+	"bounce": {
+		"scope": "plaintext",
+		"prefix": "$bounce",
+		"body": [
+			"$[bounce${1| ,.speed=|}$0]",
+		],
+		"description": "アニメーション(バウンド)",
+	},
+	"flip": {
+		"scope": "plaintext",
+		"prefix": "$flip",
+		"body": [
+			"$[flip${1| ,.v ,.h ,.v\\,h |}$0]",
+		],
+		"description": "反転",
+	},
+	"x2": {
+		"scope": "plaintext",
+		"prefix": "$x2",
+		"body": [
+			"$[x2 $0]",
+		],
+		"description": "2倍に拡大",
+	},
+	"x3": {
+		"scope": "plaintext",
+		"prefix": "$x3",
+		"body": [
+			"$[x3 $0]",
+		],
+		"description": "3倍に拡大",
+	},
+	"x4": {
+		"scope": "plaintext",
+		"prefix": "$x4",
+		"body": [
+			"$[x4 $0]",
+		],
+		"description": "4倍に拡大",
+	},
+	"scale": {
+		"scope": "plaintext",
+		"prefix": "$scale",
+		"body": [
+			"$[scale${1| ,.x= ,.y= ,.x= \\,y= }$0]",
+		],
+		"description": "拡大",
+	},
+	"position": {
+		"scope": "plaintext",
+		"prefix": "$position",
+		"body": [
+			"$[position${1| ,.x= ,.y= ,.x= \\,y= }$0]",
+		],
+		"description": "位置変更",
+	},
+	"fg": {
+		"scope": "plaintext",
+		"prefix": "$fg",
+		"body": [
+			"$[fg${1| ,.color= |}$0]",
+		],
+		"description": "文字色",
+	},
+	"bg": {
+		"scope": "plaintext",
+		"prefix": "$bg",
+		"body": [
+			"$[bg${1| ,.color= |}$0]",
+		],
+		"description": "背景色",
+	},
+	"font": {
+		"scope": "plaintext",
+		"prefix": "$font",
+		"body": [
+			"$[font.${1|serif,monospace,cursive,fantasy|} $0]",
+		],
+		"description": "フォント",
+	},
+	"blur": {
+		"scope": "plaintext",
+		"prefix": "$blur",
+		"body": [
+			"$[blur $0]",
+		],
+		"description": "ブラー",
+	},
+	"rainbow": {
+		"scope": "plaintext",
+		"prefix": "$rainbow",
+		"body": [
+			"$[rainbow${1| ,.speed= |}$0]",
+		],
+		"description": "レインボー装飾",
+	},
+	"sparkle": {
+		"scope": "plaintext",
+		"prefix": "$sparkle",
+		"body": [
+			"$[sparkle $0]",
+		],
+		"description": "キラキラ装飾",
+	},
+	"rotate": {
+		"scope": "plaintext",
+		"prefix": "$rotate",
+		"body": [
+			"$[rotate${1| ,.deg= |}$0]",
+		],
+		"description": "角度変更",
+	},
+	"ruby": {
+		"scope": "plaintext",
+		"prefix": "$ruby",
+		"body": [
+			"$[ruby ${1:text} ${2:ruby}]",
+		],
+		"description": "ルビ",
+	},
+	"unixtime": {
+		"scope": "plaintext",
+		"prefix": "$unixtime",
+		"body": [
+			"$[unixtime $0]",
+		],
+		"description": "UNIX時間",
+	},
+
+	// originally expand
+	"link": {
+		"scope": "plaintext",
+		"prefix": "$link",
+		"body": [
+			"[${1:NAME}](${2:URL})",
+		],
+		"description": "リンク",
+	},
+	"center": {
+		"scope": "plaintext",
+		"prefix": "<center>",
+		"body": [
+			"<center>$0</center>",
+		],
+		"description": "中央寄せ",
+	},
+	"small": {
+		"scope": "plaintext",
+		"prefix": "<small>",
+		"body": [
+			"<small>$0</small>",
+		],
+		"description": "目立たない字",
+	},
+	"plain": {
+		"scope": "plaintext",
+		"prefix": "<plain>",
+		"body": [
+			"<plain>$0</plain>",
+		],
+		"description": "プレーン",
+	},
+}
