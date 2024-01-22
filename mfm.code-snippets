@@ -1,7 +1,7 @@
 {
-	// Markup language For Misskey Snippets v1.0.0
+	// Markup language For Misskey Snippets v1.1.0
 	// Ref: https://misskey.io/@hakohako_f2/pages/mfm-cheat-sheet
-	// For Misskey 2023.11.1
+	// For Misskey 2023.12.0
 
 	// Author: momizi06(momizi06@misskey.io)
 	// License: MIT
@@ -11,7 +11,7 @@
 		"scope": "plaintext",
 		"prefix": "$tada",
 		"body": [
-			"$[tada${1| ,.speed=|}$0]",
+			"$[tada${1| ,.delay= ,.speed= |}$0]",
 		],
 		"description": "アニメーション(じゃーん)"
 	},
@@ -19,7 +19,7 @@
 		"scope": "plaintext",
 		"prefix": "$jelly",
 		"body": [
-			"$[jelly${1| ,.speed= |}$0]",
+			"$[jelly${1| ,.delay= ,.speed= |}$0]",
 		],
 		"description": "アニメーション(びよんびよん)",
 	},
@@ -27,7 +27,7 @@
 		"scope": "plaintext",
 		"prefix": "$twitch",
 		"body": [
-			"$[twitch${1| ,.speed=|}$0]",
+			"$[twitch${1| ,.delay= ,.speed= |}$0]",
 		],
 		"description": "アニメーション(ブレ)",
 	},
@@ -35,7 +35,7 @@
 		"scope": "plaintext",
 		"prefix": "$shake",
 		"body": [
-			"$[shake${1| ,.speed=|}$0]",
+			"$[shake${1| ,.delay= ,.speed= |}$0]",
 		],
 		"description": "アニメーション(ぶるぶる)",
 	},
@@ -43,7 +43,7 @@
 		"scope": "plaintext",
 		"prefix": "$spin",
 		"body": [
-			"$[spin${1| ,.left ,.alternate ,.x ,.x\\,left ,.x\\,alternate ,.y ,.y\\,left ,.y\\,alternate |}$0]",
+			"$[spin${1| ,.delay= ,.left ,.alternate ,.x ,.x\\,left ,.x\\,alternate ,.y ,.y\\,left ,.y\\,alternate |}$0]",
 		],
 		"description": "アニメーション(回転)",
 	},
@@ -51,7 +51,7 @@
 		"scope": "plaintext",
 		"prefix": "$jump",
 		"body": [
-			"$[jump${1| ,.speed=|}$0]",
+			"$[jump${1| ,.delay= ,.speed= |}$0]",
 		],
 		"description": "アニメーション(ジャンプ)",
 	},
@@ -59,7 +59,7 @@
 		"scope": "plaintext",
 		"prefix": "$bounce",
 		"body": [
-			"$[bounce${1| ,.speed=|}$0]",
+			"$[bounce${1| ,.delay= ,.speed= |}$0]",
 		],
 		"description": "アニメーション(バウンド)",
 	},
@@ -147,7 +147,7 @@
 		"scope": "plaintext",
 		"prefix": "$rainbow",
 		"body": [
-			"$[rainbow${1| ,.speed= |}$0]",
+			"$[rainbow${1| ,.delay= ,.speed= |}$0]",
 		],
 		"description": "レインボー装飾",
 	},
